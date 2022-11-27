@@ -1,0 +1,18 @@
+﻿@model AppMessage;
+<html>
+	<head>
+		<title> Mvc Models App message</title>
+	</head>
+
+	<body> 
+		<h1> @Model.Message </h1>
+		<br />
+		<h2>@ViewBag.Message</h2>
+		<form method="post" asp-action="Index" asp-controller="home">
+		<label asp-for="Message">Enter Message : </label>
+		<br />
+		<input type="text" asp-for="Message" />
+		<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>
